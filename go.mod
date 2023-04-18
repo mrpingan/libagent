@@ -2,7 +2,10 @@ module github.com/jkstack/libagent
 
 go 1.18
 
-replace github.com/kardianos/service => github.com/lwch/service v1.2.1-1
+replace (
+	github.com/jkstack/anet => ltgitlab.leiting.com/pingqq/anet v0.0.2
+	github.com/kardianos/service => github.com/lwch/service v1.2.1-1
+)
 
 require (
 	github.com/btcsuite/winsvc v1.0.0

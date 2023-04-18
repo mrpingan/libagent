@@ -18,6 +18,8 @@ type App interface {
 	Version() string
 	// 获取配置文件路径
 	ConfDir() string
+	// 获取 agent 部署的云服务器ID
+	InstanceId() string
 	// 获取libagent所需配置
 	// 该对象必须是一个相对全局作用域的变量，在后续执行过程中该变量将会被更新
 	Configure() *conf.Configure

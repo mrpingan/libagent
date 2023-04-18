@@ -38,6 +38,11 @@ func (dm *DummyApp) Version() string {
 	return "unset"
 }
 
+// InstanceId 实例获取
+func (dm *DummyApp) InstanceId() string {
+	return ""
+}
+
 // ConfDir 配置文件路径
 func (dm *DummyApp) ConfDir() string {
 	return dm.confDir

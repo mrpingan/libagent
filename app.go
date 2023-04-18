@@ -79,6 +79,7 @@ func (app *app) start() {
 
 		conn, err := app.connect()
 		if err != nil {
+			logging.Error("连接失败: %v", err)
 			continue
 		}
 

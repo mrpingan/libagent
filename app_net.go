@@ -64,6 +64,7 @@ func (app *app) sendCome(conn *websocket.Conn) {
 		ID:              app.a.Configure().ID,
 		Name:            app.a.AgentName(),
 		Version:         app.a.Version(),
+		InstanceId:      app.a.InstanceId(),
 		IP:              ip,
 		MAC:             utils.GetMac(ip),
 		HostName:        hostName,
