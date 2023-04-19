@@ -28,6 +28,9 @@ type Configure struct {
 		Rotate int `json:"rotate" yaml:"rotate" kv:"rotate"`
 	} `json:"log" yaml:"log" kv:"log"`
 
+	// 缓存目录
+	CacheDir string `json:"cache_dir" yaml:"cache_dir" kv:"cache_dir"`
+
 	// 监控配置
 	Monitor struct {
 		// 是否启用监控数据上报
