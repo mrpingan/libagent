@@ -22,7 +22,7 @@ var dialer = websocket.Dialer{
 
 func (app *app) connect() (*websocket.Conn, error) {
 	app.a.Configure().RewriteServer()
-	conn, _, err := dialer.Dial(fmt.Sprintf("wss://%s/ws/agent", app.a.Configure().Server), nil)
+	conn, _, err := dialer.Dial(fmt.Sprintf("%s/ws/agent", app.a.Configure().Server), nil)
 	if err != nil {
 		logging.Error("dial: %v", err)
 		return nil, err
