@@ -3,7 +3,7 @@ module github.com/jkstack/libagent
 go 1.18
 
 replace (
-	github.com/jkstack/anet => ltgitlab.leiting.com/pingqq/anet v0.0.2
+	github.com/jkstack/anet => github.com/mrpingan/anet v0.1.0
 	github.com/kardianos/service => github.com/lwch/service v1.2.1-1
 )
 
